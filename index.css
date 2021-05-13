@@ -1,0 +1,457 @@
+/* FONTS */
+
+    /* PASSION ONE */
+@font-face {
+    font-family: "Passion One";
+    src: url("fonts/Passion_One/PassionOne-Regular.ttf") format("ttf");
+}
+
+    /* POPPINS */
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Poppins";
+    font-weight: bold;
+	src: url('fonts/Poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+	font-family: "Poppins";
+    font-style: italic;
+	src: url('fonts/Poppins/Poppins-Italic.ttf');
+}
+
+@font-face {
+	font-family: "Poppins";
+    font-weight: 100;
+	src: url('fonts/Poppins/Poppins-ExtraLight.ttf');
+}
+
+@font-face {
+	font-family: "Poppins";
+    font-weight: 200;
+	src: url('fonts/Poppins/Poppins-ExtraLight.ttf');
+}
+
+@font-face {
+	font-family: "Poppins";
+    font-weight: 800;
+	src: url('fonts/Poppins/Poppins-ExtraLight.ttf');
+}
+
+@font-face {
+	font-family: "Poppins";
+    font-weight: 900;
+	src: url('fonts/Poppins/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family: "Poppins";
+    font-weight: 600;
+	src: url('fonts/Poppins/Poppins-Medium.ttf');
+}
+
+/* BODY */
+body {
+    background-color: #000;
+}
+
+/* HEADER */
+header {
+    width: auto;
+    height: 100vh;
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+}
+
+header > h1 {
+    grid-area: 9 / 3;
+    font-family: "Passion One";
+    font-size: 72px;
+    color: #fff;
+}
+
+header > h6 {
+    grid-area: 12 / 3 / 13 / 8;
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #fff;
+}
+
+header > p {
+    grid-area: 8 / 3 / 9 / 6;
+    font-family: "Poppins";
+    font-size: 14px;
+    color: #fff;
+}
+
+header > figure {
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 1 / 21 / 21;
+    overflow: hidden;
+    opacity: 10%;
+    transition: all ease-out 2s;
+}
+
+header > figure > img {
+    height: 100%;
+}
+
+/* BUTTON */
+.button {
+    text-decoration: none;
+    grid-area: 15 / 3;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background-color: #000;
+    border: solid 1px #fff;
+    font-family: "Poppins";
+    font-size: 14px;
+    letter-spacing: -5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.button:hover {
+    color: #000;
+    background-color: #fff;
+    border: none;
+}
+
+/* MAIN */
+main {
+    width: auto;
+    height: auto;
+    margin: 0 100px;
+}
+
+    /* H2 */
+h2 {
+    position: relative;
+    color: #fff;
+    font-family: "Passion One";
+    font-size: 36px;
+}
+
+    /* SECTION */
+section {
+    margin: 100px 0;
+}
+
+    /* PRESENTATION */ 
+#presentation {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+        /* H2 */
+#presentation > h2::before {
+    content: "";
+    width: 0px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: -150%;
+    transition: all ease-out 1s;
+}
+
+#presentation > h2::after {
+    content: "";
+    width: 0px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: -150%;
+    transition: all ease-out 1s;
+}
+
+        /* H2 HOVER */
+#presentation:hover h2::before {
+    content: "";
+    width: 300px;
+}
+
+#presentation:hover h2::after {
+    content: "";
+    width: 300px;
+}
+
+        /* P */
+#presentation > p {
+    width: 900px;
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 16px;
+    letter-spacing: -5%;
+}
+
+        /* H3 */
+#presentation > h3 {
+    color: #ddd;
+    font-family: "Passion One";
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+    /* RULES */
+#rules {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* NET X */
+#rules > .net-x {
+    position: absolute;
+    top: 0%;
+    right: 20%;
+    background-color: #fff;
+    width: 1px;
+    height: 500px;
+    transform: rotate(-30deg);
+    transition: all ease-out 2s;
+}
+
+#rules:hover .net-x {
+    transform: rotate(50deg);
+}
+
+        /* NET Y */
+#rules > .net-y {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    background-color: #fff;
+    width: 1px;
+    height: 600px;
+    transform: rotate(50deg);
+    transition: all ease-out 2s;
+}
+
+#rules:hover .net-y {
+    transform: rotate(-30deg);
+}
+
+        /* H3 */
+#rules > h3 {
+    color: #aaa;
+    margin: 30px;
+    font-family: "Poppins";
+    font-size: 18px;
+    letter-spacing: -5%;
+    font-style: italic;
+}
+
+        /* P */
+#rules > p {
+    text-align: center;
+    width: 500px;
+    font-family: "Poppins";
+    font-size: 16px;
+    letter-spacing: -5%;
+    color: #fff;
+}
+
+        /* PAGINATION */
+#rules > #pagination {
+    margin: 50px 0;
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+            /* PAGE */
+#rules > #pagination > .page {
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 100%;
+}
+
+            /* PAGE.WHITE */
+#rules > #pagination > .page.white {
+    background-color: #fff;
+}
+
+    /* POINTS */
+#points {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    width: 100%;
+    height: 100vh;
+}
+
+        /* NET X */
+#points > .net-x {
+    background-color: #fff;
+    width: 1px;
+    height: 0px;
+    grid-area: 1 / 4;
+    transition: all ease-out 2s;
+}
+
+        /* NET Y */
+#points > .net-y {
+    background-color: #fff;
+    width: 0px;
+    height: 1px;
+    grid-area: 4 / 3;
+    transition: all ease-out 2s;
+}
+
+        /* H2 */
+#points h2 {
+    grid-area: 2 / 3;
+}
+
+        /* SPAN */
+#points span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins";
+}
+
+        /* ABSCISSA */
+#points > .abscissa {
+    width: 100%;
+    grid-area: 3 / 5 / 3 / 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+        /* ORDINATE */
+#points > .ordinate {
+    width: 100%;
+    grid-area: 4 / 3 / 6 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+        /* LINE 1 */
+#points > .line1 {
+    width: 100%;
+    grid-area: 4 / 5 / 5 / 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+        /* LINE 2 */
+#points > .line2 {
+    width: 100%;
+    grid-area: 5 / 5 / 6 / 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /* CONTACT */
+#contact {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+    width: 100%;
+    height: 100vh;
+}
+
+        /* H2 */
+#contact > h2 {
+    grid-area: 7 / 3;
+}
+
+        /* FORM */
+#contact > form {
+    padding: 0 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 5 / 9 / 19 / 18;
+}
+
+            /* INPUT */
+#contact > form > input {
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid #fff;
+    width: 150px;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Poppins";
+    position: absolute;
+}
+
+#contact > form > input:nth-of-type(1) {
+    top: 0;
+    left: 10%;
+}
+
+#contact > form > input:nth-of-type(2) {
+    top: 0;
+    right: 10%;
+}
+
+            /* TEXTAREA */
+#contact > form > textarea {
+    resize: vertical;
+    width: 100%;
+    min-height: 100px;
+    font-size: 16px;
+    font-family: "Poppins";
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+            /* SELECT */
+#contact > form > select {
+    margin: 100px 0 0 0;
+    width: 150px;
+    font-size: 16px;
+    font-family: "Poppins";
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+#contact > form > select:focus {
+    background-color: #fff;
+    color: #000;
+}
+            
+            /* BUTTON */
+#contact > form > * {
+    margin: 50px 0 0 0;
+}
+            
