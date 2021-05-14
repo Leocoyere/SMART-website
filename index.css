@@ -1,57 +1,14 @@
 /* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor&family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor&family=Passion+One&family=Poppins:wght@400;500&display=swap');
 
-    /* PASSION ONE */
-@font-face {
-    font-family: "Passion One";
-    src: url("fonts/Passion_One/PassionOne-Regular.ttf") format("ttf");
-}
 
-    /* POPPINS */
 @font-face {
-    font-family: "Poppins";
-    src: url("fonts/Poppins/Poppins-Regular.ttf");
+    font-family: 'Passion One', cursive;
 }
 
 @font-face {
-	font-family: "Poppins";
-    font-weight: bold;
-	src: url('fonts/Poppins/Poppins-Bold.ttf');
-}
-
-@font-face {
-	font-family: "Poppins";
-    font-style: italic;
-	src: url('fonts/Poppins/Poppins-Italic.ttf');
-}
-
-@font-face {
-	font-family: "Poppins";
-    font-weight: 100;
-	src: url('fonts/Poppins/Poppins-ExtraLight.ttf');
-}
-
-@font-face {
-	font-family: "Poppins";
-    font-weight: 200;
-	src: url('fonts/Poppins/Poppins-ExtraLight.ttf');
-}
-
-@font-face {
-	font-family: "Poppins";
-    font-weight: 800;
-	src: url('fonts/Poppins/Poppins-ExtraLight.ttf');
-}
-
-@font-face {
-	font-family: "Poppins";
-    font-weight: 900;
-	src: url('fonts/Poppins/Poppins-ExtraBold.ttf');
-}
-
-@font-face {
-	font-family: "Poppins";
-    font-weight: 600;
-	src: url('fonts/Poppins/Poppins-Medium.ttf');
+    font-family: 'Poppins', sans-serif;
 }
 
 /* BODY */
