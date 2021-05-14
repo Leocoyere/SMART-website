@@ -19,7 +19,7 @@ body {
 
 /* MEDIUM SCREENS */
 @media screen and (min-width: 800px) {
-        
+    
     /* HEADER */
     header {
         width: auto;
@@ -45,7 +45,7 @@ body {
     }
 
     header > p {
-        grid-area: 8 / 3 / 9 / 6;
+        grid-area: 8 / 3 / 9 / 7;
         font-family: "Poppins";
         font-size: 14px;
         color: #fff;
@@ -63,7 +63,7 @@ body {
     }
 
     header > figure > img {
-        height: 100%;
+        width: 60%;
     }
 
     /* BUTTON */
@@ -88,6 +88,63 @@ body {
         color: #000;
         background-color: #fff;
         border: none;
+    }
+
+    /* ASIDE */
+    body > aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        top: calc(50vh - 96px);
+        left: 40px;
+        width: auto;
+        height: auto;
+    }
+
+    body > aside > a {
+        position: relative;
+        width: 20px;
+        height: 5px;
+        background-color: #fff;
+        opacity: 30%;
+        margin: 20px 0;
+        transition: all ease-out 0.5s;
+    }
+
+    body > aside > a:hover {
+        opacity: 100%;
+    }
+
+    body > aside > a::after {
+        top: calc(50% - 7px);
+        color: #000;
+        font-family: "Poppins";
+        position: absolute;
+        left: 50px;
+        font-size: 14px;
+        transition: all linear 0.5s;
+    }
+
+    body > aside > a:hover::after {
+        color: #fff;
+    }
+
+    body > aside > a:nth-of-type(1)::after {
+        content: "download";
+    }
+
+    body > aside > a:nth-of-type(2)::after {
+        content: "presentation";
+    }
+
+    body > aside > a:nth-of-type(3)::after {
+        content: "rules";
+    }
+
+    body > aside > a:nth-of-type(4)::after {
+        content: "points";
     }
 
     /* MAIN */
@@ -128,7 +185,7 @@ body {
         background-color: #fff;
         position: absolute;
         top: calc(50% - 1px);
-        left: -150%;
+        left: -110%;
         transition: all ease-out 1s;
     }
 
@@ -139,24 +196,25 @@ body {
         background-color: #fff;
         position: absolute;
         top: calc(50% - 1px);
-        right: -150%;
+        right: -110%;
         transition: all ease-out 1s;
     }
 
             /* H2 HOVER */
     #presentation:hover h2::before {
         content: "";
-        width: 300px;
+        width: 100%;
     }
 
     #presentation:hover h2::after {
         content: "";
-        width: 300px;
+        width: 100%;
     }
 
             /* P */
     #presentation > p {
-        width: 900px;
+        text-align: center;
+        width: 80%;
         color: #fff;
         font-family: "Poppins";
         font-size: 16px;
@@ -227,7 +285,7 @@ body {
             /* P */
     #rules > p {
         text-align: center;
-        width: 500px;
+        width: 40%;
         font-family: "Poppins";
         font-size: 16px;
         letter-spacing: -5%;
@@ -271,7 +329,7 @@ body {
         background-color: #fff;
         width: 1px;
         height: 0px;
-        grid-area: 1 / 4;
+        grid-area: 1 / 3;
         transition: all ease-out 2s;
     }
 
@@ -280,13 +338,23 @@ body {
         background-color: #fff;
         width: 0px;
         height: 1px;
-        grid-area: 4 / 3;
+        grid-area: 4 / 2;
         transition: all ease-out 2s;
+    }
+
+            /* NET X HOVER */
+    #points:hover > .net-x {
+        height: 400px;
+    }
+
+            /* NET Y HOVER */
+    #points:hover > .net-y {
+        width: 900px;
     }
 
             /* H2 */
     #points h2 {
-        grid-area: 2 / 3;
+        grid-area: 2 / 2;
     }
 
             /* SPAN */
@@ -301,7 +369,7 @@ body {
             /* ABSCISSA */
     #points > .abscissa {
         width: 100%;
-        grid-area: 3 / 5 / 3 / 9;
+        grid-area: 3 / 4 / 3 / 9;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -310,7 +378,7 @@ body {
             /* ORDINATE */
     #points > .ordinate {
         width: 100%;
-        grid-area: 4 / 3 / 6 / 4;
+        grid-area: 4 / 2 / 6 / 3;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -320,7 +388,7 @@ body {
             /* LINE 1 */
     #points > .line1 {
         width: 100%;
-        grid-area: 4 / 5 / 5 / 9;
+        grid-area: 4 / 4 / 5 / 9;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -329,7 +397,7 @@ body {
             /* LINE 2 */
     #points > .line2 {
         width: 100%;
-        grid-area: 5 / 5 / 6 / 9;
+        grid-area: 5 / 4 / 6 / 9;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -361,13 +429,11 @@ body {
     footer > a::after {
         position: absolute;
         top: calc(50% - 9px);
-        transform: translate(300%);
         left: -250%;
-        color: #fff;
+        color: #000;
         font-size: 16px;
-        font-weight: 600;
         font-family: "Poppins";
-        transition: all ease-out 0.5s;
+        transition: all linear 0.5s;
     }
 
     footer > a:nth-of-type(1):after {
@@ -379,7 +445,7 @@ body {
     }
 
     footer > a:hover::after {
-        transform: translate(0);
+        color: #fff;
     }
 
     footer > a:hover {
@@ -429,7 +495,7 @@ body {
         position: absolute;
         width: 100%;
         height: auto;
-        top: 5%;
+        top: 3%;
         left: 0;
         z-index: -2;
         display: flex;
@@ -466,6 +532,11 @@ body {
         color: #000;
         background-color: #fff;
         border: none;
+    }
+
+    /* ASIDE */
+    body > aside {
+        display: none;
     }
 
     /* MAIN */
@@ -623,8 +694,12 @@ body {
         grid-area: 3 / 5 / 4 / 10;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+    }
+
+    #points > .ordinate > span {
+        margin: 0 25% 0 10%;
     }
 
             /* LINE 1 */
@@ -649,12 +724,12 @@ body {
 
         /* FOOTER */
     footer {
+        background-color: #fff;
         width: 100%;
-        height: auto;
+        height: 100px;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 0 0 50px 0;
     }
 
     footer > a {
@@ -663,10 +738,8 @@ body {
         width: 70px;
         height: 70px;
         border-radius: 100%;
-        background-color: #fff;
         padding: 10px;
         box-sizing: border-box;
-        margin: 10px 0 0 0;
     }
 
     footer > a > img {
