@@ -18,6 +18,10 @@ document.querySelector(".page:nth-of-type(4)").addEventListener('click', () => {
     rules(".page", 4)
 })
 
+document.querySelector(".page:nth-of-type(5)").addEventListener('click', () => {
+    rules(".page", 5)
+})
+
 function rules(list, number) {
     document.querySelectorAll(list).forEach(element => {
         element.classList.remove("white")
